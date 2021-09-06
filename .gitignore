@@ -21,4 +21,4 @@ target/
 Cargo.lock
 
 # Artifacts folder
-artifacts
+/artifacts
