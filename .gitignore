@@ -4,6 +4,9 @@
 # Text file backups
 **/*.rs.bk
 
+# Dependencies
+node_modules
+
 # Build results
 target/
 
@@ -21,4 +24,4 @@ target/
 Cargo.lock
 
 # Artifacts folder
-/artifacts
+artifacts

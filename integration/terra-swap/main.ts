@@ -40,7 +40,7 @@ async function setupTest() {
   const cw20CodeId = await storeCode(
     terra,
     deployer,
-    path.resolve(__dirname, "../artifacts/terraswap_token.wasm")
+    path.resolve(__dirname, "../fixtures/terraswap_token.wasm")
   );
 
   console.log(chalk.green("Done!"), `${chalk.blue("codeId")}=${cw20CodeId}`);
@@ -68,7 +68,7 @@ async function setupTest() {
   const codeId = await storeCode(
     terra,
     deployer,
-    path.resolve(__dirname, "../artifacts/terraswap_pair.wasm")
+    path.resolve(__dirname, "../fixtures/terraswap_pair.wasm")
   );
 
   console.log(chalk.green("Done!"), `${chalk.blue("codeId")}=${codeId}`);
