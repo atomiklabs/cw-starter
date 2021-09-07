@@ -1,7 +1,4 @@
 {
-  "scripts": {
-    "test": "ts-node terra-swap/main.ts"
-  },
   "dependencies": {
     "@terra-money/terra.js": "^2.0.1",
     "bn.js": "^5.2.0",
