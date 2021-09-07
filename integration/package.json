@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "test": "ts-node terra-swap/main.ts"
+  },
   "dependencies": {
     "@terra-money/terra.js": "^2.0.1",
     "bn.js": "^5.2.0",
@@ -11,6 +14,7 @@
     "@types/chai": "^4.2.21",
     "@types/chai-as-promised": "^7.1.4",
     "@types/chalk": "^2.2.0",
+    "@types/node": "^16.7.11",
     "ts-node": "^10.2.0",
     "typescript": "^4.3.5"
   }
