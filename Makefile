@@ -1,5 +1,5 @@
 build:
-	cargo check
+	cargo test
 	sh scripts/build_release.sh
 
 test: build
