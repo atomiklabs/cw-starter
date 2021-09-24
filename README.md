@@ -1,6 +1,6 @@
-# CosmWams Starter
+# CosmWasm Project Starter Template
 
-This repository covers most common funcionality and configuration required to bootstrap a CosmWasm project.
+This repository covers most common funcionality and configuration required to bootstrap a CosmWasm project. Click on `Use this template` button on the top of this page.
 
 ## Commands
 
