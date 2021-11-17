@@ -1,0 +1,31 @@
+[package]
+name = "empty-template"
+version = "0.1.0"
+authors = ["Atomik Labs <https://atomiklabs.io>"]
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[profile.release]
+lto = true
+codegen-units = 1
+panic = 'abort'
+overflow-checks = true
+
+[features]
+# for more explicit tests, cargo test --features=backtraces
+backtraces = ["cosmwasm-std/backtraces"]
+# use library feature to disable all instantiate/execute/query exports
+library = []
+
+[dependencies]
+cosmwasm-std = "0.16.2"
+cw-storage-plus = "0.9.1"
+cw2 = "0.9.1"
+schemars = "0.8.4"
+serde = { version = "1.0.130", default-features = false, features = ["derive"] }
+thiserror = "1.0.29"
+
+[dev-dependencies]
+cosmwasm-schema = { version = "0.16.2" }
