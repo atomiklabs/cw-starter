@@ -19,4 +19,3 @@ It takes care of having:
 - the local develpment environent ready,
 - all tests executed,
 - the local develpment environent shut down after.
-

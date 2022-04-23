@@ -1,26 +1,30 @@
-start: build docker-up
-	cd integration && make test
+DOCKER_COMPOSE=docker-compose -f vendor/localterra/docker-compose.yml
+
+start: compile docker-up
 
 stop: docker-down
 
 restart: stop start
 
-test: build docker-up
-	cd integration && make test && \
-	cd .. && make docker-down
+test: compile docker-up
+	make -C ./integration test
+	make docker-down
 
-build:
-	cargo test
+compile:
 	sh scripts/build_release.sh
 
+deploy-to-terra: compile
+	cd integration && \
+	CHAIN_URL=$(CHAIN_URL) \
+	CHAIN_ID=$(CHAIN_ID) \
+	CHAIN_NAME=$(CHAIN_NAME) \
+	make deploy-to-terra
+
 docker-up:
-	cd local && \
-	docker-compose up -d --remove-orphans
+	$(DOCKER_COMPOSE) up -d --remove-orphans
 
 docker-up-inline:
-	cd local && \
-	docker-compose up --remove-orphans
+	$(DOCKER_COMPOSE) up --remove-orphans
 
 docker-down:
-	cd local && \
-	docker-compose down --remove-orphans
+	$(DOCKER_COMPOSE) down --remove-orphans

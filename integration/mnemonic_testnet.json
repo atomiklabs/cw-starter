@@ -1,0 +1,29 @@
+{
+  "mnemonics": [
+    {
+      "name": "validator",
+      "address": "terra1dcegyrekltswvyy0xy69ydgxn9x8x32zdtapd8",
+      "mnemonic": "satisfy adjust timber high purchase tuition stool faith fine install that you unaware feed domain license impose boss human eager hat rent enjoy dawn"
+    },
+    {
+      "name": "bombay_deployer",
+      "address": "terra1kuf0ndfl2enzakf7xkaq90qs30xlksajg8t0uu",
+      "mnemonic": "talk flag ocean post carpet gasp round evolve curve law grace lecture time session pause hobby dismiss explain wink action october pencil spread easily"
+    },
+    {
+      "name": "bombay_alice",
+      "address": "terra1w8rh45dxy3x3qmu04g22n49ztkdcan7f8eqksn",
+      "mnemonic": "crush mansion exit fiction olive pond today beauty column normal teach negative news find claw another off tobacco stock then scorpion stool random voyage"
+    },
+    {
+      "name": "bombay_bob",
+      "address": "terra126z4vwmhfzj0slaql8wmgakmhnxdzuun57p3hf",
+      "mnemonic": "spare bullet kiwi nest donor what stable text clever ice leave novel display release scrap tide drift lemon electric awesome spirit vague wheat female"
+    },
+    {
+      "name": "bombay_dave",
+      "address": "terra1wkmm7gtr4jgmk43znnmmmqjlx4rhhyczgumaza",
+      "mnemonic": "market valid crouch indoor render crash fall bid glue own close fancy need believe alcohol symbol include fuel run surge check field tiny blossom"
+    }
+  ]
+}

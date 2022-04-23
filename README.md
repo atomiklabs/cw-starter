@@ -6,7 +6,7 @@ This repository covers most common funcionality and configuration required to bo
 
 There a couple of useful commands available at the top-level of the project:
 
-- `make build` creates optimised WASM files for each of the smart contracts from [`./contracts`](./contracts) directory;
+- `make compile` creates optimised WASM files for each of the smart contracts from [`./contracts`](./contracts) directory;
 - `make test` runs all testing suite (as of now, the integration test from [`./integration`](./integration) direcotry).
 
 ## Components
@@ -21,7 +21,7 @@ If you would like to know more about CosmWams smart contracts, feel free to go t
 
 Local Terra node configuration.
 
-> [Docs](./local/README.md)
+> [Docs](./vendor/localterra/README.md)
 
 ### Integration
 
